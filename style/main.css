@@ -4,6 +4,7 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ffeb3b 0%, #81d4fa 50%, #ff8a65 100%);
   margin: 0;
 }
 
@@ -289,4 +290,50 @@ body {
     font-size: 1.5rem;
     font-weight: lighter;
   }
+}
+.custom-image {
+    max-width: 200%;
+    max-height: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto 0 auto;
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.custom-image1 {
+    max-width: 200%;
+    max-height: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto 0 auto;
+    position: absolute;
+    left: 10%;
+    bottom: 0%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.school-image {
+    display: block;
+    margin: 10px auto;       /* Center the image horizontally */
+    max-width: 200px;
+    max-height: 200px;        /* Limit the width for better layout */
+    height: auto;            /* Proportional scaling */
+    border-radius: 6px;      /* Optional: rounded corners */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Optional: subtle shadow */
+}
+
+.birthday-image {
+    display: block;
+    margin: 10px auto;       /* Center the image horizontally */
+    max-width: 200px;
+    max-height: 200px;
+    bottom: 10%;       /* Limit the width for better layout */
+    height: auto;            /* Proportional scaling */
+    border-radius: 6px;      /* Optional: rounded corners */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Optional: subtle shadow */
 }
