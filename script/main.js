@@ -10,13 +10,22 @@ window.addEventListener('load', () => {
         cancelButtonText: 'No',
     }).then((result) => {
         if (result.isConfirmed) {
-            document.querySelector('.song').play();
+            const song1 = document.querySelector('.song');
+            const song2 = document.querySelector('.song2');
+            song1.play();
+
+            // When the first song ends, play the next song
+            song1.addEventListener('ended', () => {
+                song2.play();
+            });
+
             animationTimeline();
         } else {
             animationTimeline();
         }
     });
 });
+
 
 
 // animation timeline
